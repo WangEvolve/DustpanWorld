@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+<!--上部分显示头像-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -33,73 +33,77 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+<!--    下部分显示按钮列表-->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="70"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:gravity="center">
+        android:layout_weight="70">
 
-        <Button
-            android:id="@+id/my_account_button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_user_w"
-            android:text="我的账号"
-            android:background="@color/colorPrimaryY"
-            android:padding="16dp"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <Button
-            android:id="@+id/my_order_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_order"
-            android:text="我的订单"
-            android:background="@color/colorPrimaryY"
-            android:padding="16dp"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/my_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryY"
+                android:drawableLeft="@drawable/ic_user_w"
+                android:padding="16dp"
+                android:text="我的账号"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/my_address_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_address"
-            android:text="我的地址"
-            android:background="@color/colorPrimaryY"
-            android:padding="16dp"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/my_order_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryY"
+                android:drawableLeft="@drawable/ic_order"
+                android:padding="16dp"
+                android:text="我的订单"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/authenticate_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_authentication"
-            android:text="认证账号"
-            android:background="@color/colorPrimaryY"
-            android:padding="16dp"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/my_address_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryY"
+                android:drawableLeft="@drawable/ic_address"
+                android:padding="16dp"
+                android:text="我的地址"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/about_settings_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_setting"
-            android:text="关于/设置"
-            android:background="@color/colorPrimaryY"
-            android:padding="16dp"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/authenticate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryY"
+                android:drawableLeft="@drawable/ic_authentication"
+                android:padding="16dp"
+                android:text="认证账号"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-    </LinearLayout>
-
+            <Button
+                android:id="@+id/about_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryY"
+                android:drawableLeft="@drawable/ic_setting"
+                android:padding="16dp"
+                android:text="关于/设置"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

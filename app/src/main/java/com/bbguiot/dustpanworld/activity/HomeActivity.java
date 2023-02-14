@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private Fragment selectFragment = new Fragment();
-    private ImageButton messageImageButton,searchImageButton;
+    private ImageButton messageImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +39,6 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this,MessageActivity.class);
-                startActivity(intent);
-            }
-        });
-//        点击右上角“信息”图标跳转到SearchActivity
-        searchImageButton = findViewById(R.id.home_search);
-        searchImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this,SearchActivity.class);
                 startActivity(intent);
             }
         });
