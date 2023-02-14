@@ -29,6 +29,9 @@
         </activity>
         <activity android:name=".activity.MessageActivity"/>
         <activity android:name=".activity.MainActivity"/>
+        <!--            屏幕直接覆盖，页面不会自动往上移动-->
+        <activity android:name=".activity.SearchActivity"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
     </application>
 
 </manifest>
