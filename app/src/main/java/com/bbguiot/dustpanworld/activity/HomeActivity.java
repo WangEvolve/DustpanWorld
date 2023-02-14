@@ -4,9 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 
 import com.bbguiot.dustpanworld.R;
 import com.bbguiot.dustpanworld.fragment.HomeFragment;
@@ -18,6 +21,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private Fragment selectFragment = new Fragment();
+    private ImageButton messageImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,15 @@ public class HomeActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectFragment).commit();
+//        点击右上角“信息”图标跳转到MessageActivity
+        messageImageButton = findViewById(R.id.home_message);
+        messageImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,MessageActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 //       选择导航栏按钮的方法

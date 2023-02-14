@@ -16,7 +16,8 @@
 
         <meta-data
             android:name="com.google.android.actions"
-            android:resource="@menu/bottom_navigation_menu" /> <!-- 这是启动APP时候载入的页面 -->
+            android:resource="@menu/bottom_navigation_menu" />
+        <!-- 这是启动APP时候载入的页面 -->
         <activity
             android:name=".activity.HomeActivity"
             android:exported="true">
@@ -26,6 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MessageActivity"/>
+        <activity android:name=".activity.MainActivity"/>
     </application>
 
 </manifest>

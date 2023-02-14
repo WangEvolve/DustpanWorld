@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#F44336</color><!--主题色-->
-    <color name="colorPrimaryBlue">#F44336</color><!--主题色-->
-    <color name="colorPrimaryTint">#F44336</color><!--主题浅色-->
-    <color name="colorPrimaryDark">#F44336</color><!--主题深色-->
+    <color name="colorPrimaryY">#F49136</color><!--主题色-->
+    <color name="colorPrimaryB">#238795</color><!--主题浅色-->
+    <color name="colorPrimaryG">#29BB43</color><!--主题深色-->
+
     <color name="colorAccent">#F44336</color>
     <color name="colorRed">#F44336</color>
 
