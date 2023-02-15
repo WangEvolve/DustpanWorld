@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/debug/res/drawable-anydpi/ic_order.xml" value="0.1835" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/debug/res/drawable-anydpi/ic_search.xml" value="0.1835" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/debug/res/drawable-anydpi/ic_setting.xml" value="0.1835" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/debug/res/drawable-anydpi/ic_shop.xml" value="0.1835" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/debug/res/drawable-anydpi/ic_user.xml" value="0.1835" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/activity_message.xml" value="0.175" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/fragment.xml" value="0.175" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/fragment_car.xml" value="0.175" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/fragment_home.xml" value="0.175" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/fragment_shop.xml" value="0.175" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/fragment_user.xml" value="0.25" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/layout/register.xml" value="0.16041666666666668" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.175" />
+        <entry key="..\:/Android studio project/DustpanWorld/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1835" />
         <entry key="..\:/Android/DustpanWorld/app/src/main/res/layout/activity_home.xml" value="0.2857142857142857" />
         <entry key="..\:/Android/DustpanWorld/app/src/main/res/layout/activity_main.xml" value="0.4421875" />
         <entry key="..\:/Android/DustpanWorld/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.241" />

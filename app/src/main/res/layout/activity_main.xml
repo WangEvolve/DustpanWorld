@@ -17,9 +17,8 @@
             android:id="@+id/main_logo"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/logo"/>
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
