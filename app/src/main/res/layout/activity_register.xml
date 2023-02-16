@@ -11,7 +11,7 @@
         android:background="#FFB600">
 
         <ImageButton
-            android:id="@+id/message_back"
+            android:id="@+id/register_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:text="注册·簸箕画世界"/>
     </RelativeLayout>
 
     <!-- 内容部分!-->
@@ -38,8 +39,8 @@
         <!--图片部分!-->
         <ImageView
             android:id="@+id/iv_logo"
-            android:layout_width="361dp"
-            android:layout_height="148dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:scaleType="centerInside"
@@ -49,19 +50,19 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:padding="40dp">
 
             <TextView
                 android:id="@+id/tv_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
                 android:text="@string/tv_phone"
                 android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/ed_phone"
-                android:layout_width="295dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_phone"
                 android:layout_alignStart="@+id/tv_phone"
@@ -86,7 +87,7 @@
 
             <EditText
                 android:id="@+id/ed_password"
-                android:layout_width="295dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_password"
                 android:layout_alignStart="@+id/tv_password"
@@ -110,7 +111,7 @@
 
             <EditText
                 android:id="@+id/ed_password2"
-                android:layout_width="295dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_password2"
                 android:layout_alignStart="@+id/tv_password2"
@@ -147,25 +148,23 @@
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/bt_login"
-                android:layout_width="295dp"
-                android:layout_height="45dp"
+                android:id="@+id/bt_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/bt_forget"
-                android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bt_shape"
-                android:text="@string/bt_login"
+                android:text="@string/bt_register"
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/bt_register"
-                android:layout_width="295dp"
-                android:layout_height="45dp"
-                android:layout_below="@+id/bt_login"
-                android:layout_alignStart="@+id/bt_login"
+                android:id="@+id/bt_back_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_register"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/bt_register"
-                android:text="@string/bt_register" />
+                android:background="@null"
+                android:text="@string/bt_account" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

@@ -1,11 +1,15 @@
 package com.bbguiot.dustpanworld.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -34,6 +38,24 @@ public class LoginActivity extends AppCompatActivity {
         AbsoluteSizeSpan ts2 = new AbsoluteSizeSpan(14, true);
         s2.setSpan(ts2, 0, s2.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         ed_password.setHint(s2);
+
+        //右上角返回
+        ImageButton login_back = findViewById(R.id.login_back);
+        login_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        //点击注册按钮
+        Button bt_register= findViewById(R.id.bt_register);
+        bt_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+            }
+        });
     }
 
 }

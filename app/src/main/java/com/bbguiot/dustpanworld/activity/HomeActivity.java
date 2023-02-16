@@ -8,9 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageButton;
-
 import com.bbguiot.dustpanworld.R;
 import com.bbguiot.dustpanworld.fragment.CarFragment;
 import com.bbguiot.dustpanworld.fragment.HomeFragment;

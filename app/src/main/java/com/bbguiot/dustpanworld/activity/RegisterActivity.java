@@ -2,6 +2,9 @@ package com.bbguiot.dustpanworld.activity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -16,10 +19,27 @@ import com.bbguiot.dustpanworld.R;
  **/
 public class RegisterActivity extends AppCompatActivity {
 
+    Button bt_back_login = findViewById(R.id.bt_back_login);
+    ImageButton register_back = findViewById(R.id.register_back);
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        //点击返回登录页面
+        bt_back_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        //点击左上角返回
+        register_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     //验证手机号码

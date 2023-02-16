@@ -15,17 +15,19 @@
             android:scaleType="centerCrop"
             android:src="@drawable/user_bg"/>
 
-        <ImageView
-            android:id="@+id/avatar_image"
+        <ImageButton
+            android:id="@+id/user_image_bt"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/logo" />
+            android:background="@drawable/logo"
+            android:scaleType="fitXY" />
 
         <TextView
+            android:id="@+id/user_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/avatar_image"
+            android:layout_below="@+id/user_image_bt"
             android:layout_centerInParent="true"
             android:text="请点击上方头像登录"
             android:textColor="@color/colorPrimary"
