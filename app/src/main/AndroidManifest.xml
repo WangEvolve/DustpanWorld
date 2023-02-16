@@ -14,12 +14,12 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
 
+
         <meta-data
             android:name="com.google.android.actions"
-            android:resource="@menu/bottom_navigation_menu" />
-        <!-- 这是启动APP时候载入的页面 -->
+            android:resource="@menu/bottom_navigation_menu" /> <!-- 这是启动APP时候载入的页面 -->
         <activity
-            android:name=".activity.HomeActivity"
+            android:name=".activity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MessageActivity"/>
-        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.MainActivity" />
         <!--            屏幕直接覆盖，页面不会自动往上移动-->
-        <activity android:name=".activity.SearchActivity"
-                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
     </application>
 
 </manifest>

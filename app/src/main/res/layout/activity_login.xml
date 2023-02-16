@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="159dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/tv_phone" />
+
+            <EditText
+                android:id="@+id/ed_phone"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_phone"
+                android:layout_marginTop="28dp"
+                android:autofillHints="手机号码"
+                android:background="@drawable/ed_status"
+                android:hint="@string/pls_phone"
+                android:importantForAutofill="yes"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColorHint="@color/colorGray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/tv_password" />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_password"
+                android:layout_marginTop="28dp"
+                android:autofillHints="密码"
+                android:background="@drawable/ed_status"
+                android:hint="@string/pls_password"
+                android:importantForAutofill="yes"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:text="@string/bt_forget"
+            android:textColor="#8F8F8F"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            android:text="@string/bt_verify"
+            android:textColor="#8F8F8F"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="295dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bt_shape"
+        android:text="@string/bt_login"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="295dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bt_register"
+        android:text="@string/bt_register" />
+
+</LinearLayout>
