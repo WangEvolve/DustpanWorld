@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#F44336</color><!--主题色-->
-    <color name="colorPrimaryY">#F49136</color><!--主题色-->
-    <color name="colorPrimaryB">#238795</color><!--主题浅色-->
-    <color name="colorPrimaryG">#29BB43</color><!--主题深色-->
-
-    <color name="colorAccent">#F44336</color>
-    <color name="colorRed">#F44336</color>
+    <color name="colorPrimaryY">#F49136</color><!--主题色 偏黄-->
+    <color name="colorPrimaryB">#238795</color><!--主题色 偏蓝-->
+    <color name="colorPrimaryG">#29BB43</color><!--主题色 偏绿-->
+    <color name="colorPrimaryR">#9F1C12</color><!--主题色 偏红-->
+    <color name="colorPrimaryP">#FA968F</color><!--主题色 偏粉-->
 
     <color name="colorBlack">#000000</color><!--黑色-->
     <color name="colorWhite">#ffffff</color><!--白色-->
