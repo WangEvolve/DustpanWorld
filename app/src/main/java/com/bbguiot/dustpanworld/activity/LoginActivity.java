@@ -13,7 +13,7 @@ import com.bbguiot.dustpanworld.R;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText ed_phone;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -22,21 +22,18 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //设置提示输入手机号码字体大小
-        findViewById(R.id.ed_phone);
+       EditText ed_phone = findViewById(R.id.ed_phone);
         SpannableString s = new SpannableString("请输入手机号码");
         AbsoluteSizeSpan ts = new AbsoluteSizeSpan(14, true);
         s.setSpan(ts, 0, s.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         ed_phone.setHint(s);
 
         //设置提示输入密码字体大小
-        ed_phone = findViewById(R.id.ed_password);
+        EditText ed_password = findViewById(R.id.ed_password);
         SpannableString s2 = new SpannableString("请输入密码");
         AbsoluteSizeSpan ts2 = new AbsoluteSizeSpan(14, true);
         s2.setSpan(ts2, 0, s2.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        ed_phone.setHint(s2);
+        ed_password.setHint(s2);
     }
-
-
-    //输入手机号码验证
 
 }
