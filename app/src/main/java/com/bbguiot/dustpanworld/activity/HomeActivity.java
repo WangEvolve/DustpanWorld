@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
 import com.bbguiot.dustpanworld.R;
+import com.bbguiot.dustpanworld.fragment.CarFragment;
 import com.bbguiot.dustpanworld.fragment.HomeFragment;
 import com.bbguiot.dustpanworld.fragment.ShopFragment;
 import com.bbguiot.dustpanworld.fragment.UserFragment;
@@ -67,6 +68,9 @@ public class HomeActivity extends AppCompatActivity {
                             break;
                         case R.id.navigation_user:
                             selectFragment = new UserFragment();
+                            break;
+                        case R.id.navigation_car:
+                            selectFragment = new CarFragment();
                             break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectFragment).commit();
