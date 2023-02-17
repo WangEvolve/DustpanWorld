@@ -24,9 +24,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:text="注册·簸箕画世界"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            android:text="注册·簸箕画世界"/>
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <!-- 内容部分!-->

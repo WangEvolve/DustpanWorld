@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    顶部导航栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#FFB600"
+        >
+
+        <ImageButton
+            android:id="@+id/add_adress_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:background="#FFB600"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/add_adress_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新增地址·簸箕画世界"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="96"
+        android:orientation="vertical">
+        <!--文本部分!-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/Addperson_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Addperson_name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Addperson_name2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Addperson_name"
+                android:layout_alignStart="@+id/Addperson_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ed_status"
+                android:hint="请输入收件人的姓名"
+                android:textColorHint="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/Addperson_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Addperson_name2"
+                android:text="@string/Addperson_phone"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Addperson_phone2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Addperson_phone"
+                android:layout_alignStart="@+id/Addperson_phone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ed_status"
+                android:hint="请输入收件人的手机号码"
+                android:importantForAutofill="yes"
+                android:inputType="phone"
+                android:textColorHint="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/Addperson_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Addperson_phone2"
+                android:text="@string/Addperson_area"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Addperson_area2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Addperson_area"
+                android:layout_alignStart="@+id/Addperson_area"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ed_status"
+                android:hint="请输入收件人的所在地区"
+                android:textColorHint="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/Addperson_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Addperson_area2"
+                android:text="@string/Addperson_adress"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Addperson_address2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Addperson_adress"
+                android:layout_alignStart="@+id/Addperson_adress"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ed_status"
+                android:hint="请输入收件人的详细地址"
+                android:textColorHint="@color/colorGray" />
+
+            <Button
+                android:id="@+id/bt_add_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Addperson_address2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bt_shape"
+                android:text="新增地址"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

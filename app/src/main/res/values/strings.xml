@@ -12,5 +12,9 @@
     <string name="pls_password">请输入密码</string>
     <string name="pls_phone">请输入手机号码</string>
     <string name="workname">簸箕画世界</string>
+    <string name="Addperson_name">收件人姓名</string>
+    <string name="Addperson_phone">收件人手机号码</string>
+    <string name="Addperson_area">所在地区</string>
+    <string name="Addperson_adress">详细地址</string>
 
 </resources>
